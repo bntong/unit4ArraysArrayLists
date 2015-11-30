@@ -1,6 +1,19 @@
 public class ArrayOperations2
 {
-    private int[] values = {0 , 4 , 6 , 4 , 2 , 10 , 15};
+    private int[] values;
+    private int currentSize;
+    
+    public ArrayOperations2()
+    {
+        this.values = new int[10];
+        for( this.currentSize = 0;
+            this.currentSize < 10;
+            this.currentSize++ )
+        {
+            this.values[this.currentSize] = 
+                this.currentSize * this.currentSize;
+        }
+    }
     
     public void swapFirstAndLast()
     {
@@ -11,6 +24,13 @@ public class ArrayOperations2
     
     public void shiftRight()
     {
+        for(int i = 0;
+            i < this.currentSize-1;
+            i++)
+        {
+            this.values[i+1] = this.values[i];  
+        }
+        
         
     }
 }
