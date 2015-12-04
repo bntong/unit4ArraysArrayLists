@@ -9,8 +9,7 @@ public class CharMatrix
   // and fills it with spaces
   public CharMatrix(int rows, int cols)
   {
-    this.grid = new char[rows][cols];
-    
+    this.grid = new char[rows][cols];    
     for( int i = 0; i < this.grid.length; i++)
     {
         for(int j = 0; j < this.grid[i].length; j++)
@@ -24,8 +23,7 @@ public class CharMatrix
   // and fills it with the fill character
   public CharMatrix(int rows, int cols, char fill)
   {
-     this.grid = new char[rows][cols];
-     
+     this.grid = new char[rows][cols];     
      for(int i = 0; i < this.grid.length; i++)
      {
          for(int j = 0; j < this.grid[i].length; j++)
