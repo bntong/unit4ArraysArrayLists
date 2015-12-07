@@ -1,11 +1,4 @@
-
-
-/**
- * Write a description of class TopCustomers here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
+import java.util.*;
 public class TopCustomers
 {
     /** description of instance variable x (add comment for each instance variable) */
@@ -31,10 +24,14 @@ public class TopCustomers
      * @param    y    description of parameter y
      * @return    description of the return value
      */
-    public int sampleMethod(int y)
+    public void addSale(String customerName , double amount)
     {
         // put your code here
-        return x+y;
+        
     }
-
+    
+//     public String nameOfBestCustomer()
+//     {
+//         
+//     }
 }

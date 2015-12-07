@@ -79,14 +79,11 @@ public class CharMatrix
   // lower right corner of the rectangle.
   public void fillRect(int row0, int col0, int row1, int col1, char fill)
   {
-    for( int i = 0; i < this.grid.length; i++)
+    for( int i = row0; i <= row1; i++)
     {
-        for( int j = 0; i < this.grid[i].length; j++)
+        for( int j = col0; i <= col1; j++)
         {
-            if( i <= row0 && i >= row1 && j <= col0 && j >= col1)
-            {
-                this.grid[i][j] = fill;
-            }
+            this.grid[i][j] = fill;            
         }
     }
   }
@@ -96,14 +93,11 @@ public class CharMatrix
   // lower right corner of the rectangle.
   public void clearRect(int row0, int col0, int row1, int col1)
   {
-    for( int i = 0; i < this.grid.length; i++)
+    for( int i = row0; i <= row1; i++)
     {
-        for( int j = 0; i < this.grid[i].length; j++)
+        for( int j = col0; i <= col1; j++)
         {
-            if( i <= row0 && i >= row1 && j <= col0 && j >= col1)
-            {
-                this.grid[i][j] = ' ';
-            }
+            this.grid[i][j] = ' ';
         }
     }
   }
@@ -115,7 +109,7 @@ public class CharMatrix
     
     for( int i = 0; i < this.grid[row].length; i++)
     {
-        if( this.grid[row][i] != ' ')
+        if( this.grid[row][i] != ' ' )
         {
             count++;
         }
